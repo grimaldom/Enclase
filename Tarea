@@ -1,0 +1,32 @@
+import asyncio
+
+
+
+def map():
+    str = ""
+    for i in range(97, 110):
+        str = str + chr(i)
+    print(str)
+
+
+def generar_secuencia():
+    numero = 1
+    while True:
+        yield numero
+        numero = numero + 2
+
+
+@asyncio.coroutine
+def mostrar_fecha():
+    tiempo_final = + 50.0
+
+if __name__ == "__main__":
+
+    numeros = generar_secuencia()
+    for n in numeros:
+        tope = 101
+        print(n)
+        if n >= tope:
+            break
+
+    small_letters = map()
